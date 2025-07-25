@@ -1,0 +1,260 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+}  
+html{ 
+   scroll-behavior:smooth ; 
+}
+
+
+/* css variables */ 
+:root{ 
+    --navbar-height:59px;
+} 
+/* navigation bar */ 
+#navbar{  
+    display: flex; 
+    align-items: center;  
+    position: sticky; 
+    top: 0px;
+    
+} 
+/* navigation bar:logo and image */   
+ 
+#logo .class{ 
+    color:pink; 
+    padding: 1px;  
+ font-style: italic; 
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size:1.2rem ; 
+font-weight: bold; 
+text-decoration: underline;
+}
+
+#logo img{  
+    /* border: 2px solid red;  */
+
+    width: 80px;
+    margin: 5px ; 
+    
+
+} 
+
+/* Navigation bar:list styling */  
+
+#navbar ul{ 
+    display: flex;
+}
+#navbar ul li{ 
+    list-style: none; 
+    font-size: 1.5rem; 
+    
+} 
+#navbar ul li a{   
+    
+    color:white;
+    display: block; 
+    padding: 3px 22px; 
+    border-radius: 20px; 
+    text-decoration: none; 
+    text-shadow: 2px 2px 3px black;
+} 
+#navbar ul li a:hover{  
+    color: grey; 
+    background-color: white;
+    
+}
+#navbar::before{ 
+    content:""; 
+    background-color: black; 
+    position: absolute;  
+    top: 0px; 
+    left: 0px;
+    height: 100%; 
+    width: 100%; 
+    z-index: -1;
+    opacity: 0.4; } 
+
+/* Home section */ 
+#home{ 
+    display: flex; 
+    flex-direction: column; 
+    padding: 3px 200px; 
+    height:545px;
+    justify-content: center; 
+    align-items: center;
+} 
+#home::before{  
+    content:"";  
+    position: absolute; 
+    top: 0px; 
+    left: 0px;
+    background:url('bg1.jpg') no-repeat center center/cover; 
+    height: 100%; 
+    width: 100%; 
+    z-index: -1;
+    opacity: 0.80;
+}  
+#home h1{  
+    text-shadow: 4px 4px 2px black;
+    color: white;  
+    text-align: center; 
+    font-family:'Times New Roman', Times, serif;
+
+} 
+#home p{ 
+    color:rgb(107, 4, 110);  
+    text-align: center;  
+    font-size: 1.3rem; 
+    font-family: 'Times New Roman', Times, serif;
+} 
+/* services section */ 
+#services{ 
+    margin: 20px;  
+    /* padding: 34px; */
+    display:flex; 
+} 
+#services .box{   
+    /* font-size: 58px; */
+    position: relative; 
+    /* top: px; */
+    border: 2px solid green;   
+    margin: 3px 6px; 
+    padding: 34px;  
+    border-radius: 28px; 
+    background-color:beige;  
+box-shadow: 5px 5px 5px  grey; 
+z-index: -1;
+    
+}  
+/* #services .box h1{
+    font-size:40px ; 
+    color: lightcoral; 
+    text-shadow:3px 3px 1px grey ;
+} */
+#services .box img {  
+    display: block; 
+    margin: auto;
+    height: 200px;  
+    width: 266px;  
+    box-shadow: 5px 5px 4px black;
+} 
+#services .box p{ 
+    font-family: 'Times New Roman', Times, serif;  
+
+}  
+.primary { 
+    font-size: 50px;  
+    color: rgb(96, 5, 14); 
+    text-shadow: 3px 3px 3px brown; 
+    
+}
+/* client section */ 
+#client-section{   
+    
+     /* width: 95px; */
+      /* height: 300px; */ 
+      position: relative;
+}  
+#client-section::before{ 
+    content: ""; 
+    position: absolute; 
+    background: url('bg2.jpg') no-repeat center center/cover; 
+    width: 100%; 
+    height: 300px; 
+    z-index: -1; 
+    opacity: 0.4;
+}
+#clients{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}  
+.client-item{ 
+    padding: 40px;
+}
+#clients img{ 
+    height: 120px;
+} 
+/* contact section */ 
+#contact{ 
+    position: relative;
+}  
+#contact::before{ 
+    content: ""; 
+    position: absolute; 
+    width: 100%; 
+    height: 300px; 
+    z-index: -1; 
+    opacity: 0.7; 
+    background: url('contact.jpg') no-repeat center center/cover; 
+
+}   
+#contact-box{  
+    /* border: 2px solid green; */
+    display: flex;  
+    justify-content: center; 
+    align-items: center; 
+    /* margin: 10px 10px; */ 
+    margin: -10px;  
+    font-weight: bold; 
+    
+
+} 
+#contact-box form{ 
+    width: 40%;
+} 
+#contact-box label{ 
+    font-size: 1.0rem; 
+    font-family: 'Times New Roman', Times, serif;  
+    
+}
+#contact-box input, textarea{ 
+    width: 90%; 
+    padding: 0.2rem; 
+    border-radius: 9px; 
+    font: 1.1rem;
+}
+/* footer */  
+footer{   
+    /* display: inline; */
+    position: relative; 
+    bottom:-32px; 
+
+   background: black; 
+   color: white; 
+   padding: 9px 20px;
+}
+
+/* utility classes */ 
+.h-primary{ 
+   font-family: 'Times New Roman', Times, serif;  
+    font-size:2.8rem; 
+    padding: 9px; 
+    /* color:rgb(66, 18, 22);  */
+}  
+.h-secondary{  
+    font-size:2.1rem ; 
+    color: lightcoral; 
+    text-shadow:2px 2px 0.5px grey ;
+
+    font-family: 'Times New Roman', Times, serif;
+    padding: 12px; 
+    /* z-index: 5; */
+ }
+.btn
+{ 
+    padding: 6px 20px; 
+    border: 2px solid white; 
+    background-color:blueviolet; 
+    color:white; 
+    margin:17px 17px; 
+    border-radius: 10px;  
+    font-size: 1.0rem; 
+    cursor: pointer; 
+
+} 
+.center{ 
+    text-align: center;
+}
+
