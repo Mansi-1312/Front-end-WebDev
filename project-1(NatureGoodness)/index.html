@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature goodness</title>
+    <style>
+        /*css reset*/
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background: url('Saved Pictures/flowers-8038712_1280.jpg');
+            color: white; 
+            height: 700px; 
+             
+            /* width: 200px; */
+
+
+        }
+
+        .left {
+            position: absolute;
+            left: 6px;
+            top: 0px;
+            display: inline-block;
+            /* border: 2px solid red; */
+            margin: 12px auto;
+        }
+
+        .left img {
+            width: 80px;
+            padding: 4% 20%; 
+            
+
+
+        }
+
+        .left div {
+            font-family: cursive;
+            text-align: center;
+            line-height: 0px;
+            font-size: 23px;
+            padding: 0px 4px;  
+            color:goldenrod;
+            
+        }
+
+        .mid {
+            display: block;
+            /* border: 2px solid blue; */
+            width: 53%;
+            margin: 10px auto;
+        }
+
+        .right {
+            position: absolute;
+            right: 4px;
+            top: 0px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+            margin: 12px auto;
+
+        }
+
+        .navbar {
+
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 4px 8px;
+
+        }
+
+        .navbar li a:hover {
+
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0px 7px;
+            background-color: lightgreen;
+            color: black;
+            padding: 4px 10px;
+            /* border: 2px solid black; */
+            font-size: 12px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: grey;
+        }
+
+        .container { 
+            
+            /* border: 2px solid white; */
+            margin: 72px -15px;
+            padding: 75px;
+            width: 55%; 
+            border-radius: 28px; 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+            
+        } 
+        .form-group input{ 
+            text-align: center; 
+            display: block; 
+            width: 259px; 
+            padding: 2px; 
+            border: 2px solid green;  
+            margin: 12px 66px; 
+            font-size: 18px; 
+            border-radius: 20px; 
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+                 } 
+           .container h1{ 
+                     text-align: center; 
+                     text-decoration: underline;
+            } 
+            .container button{  
+                display: block; 
+                width: 100px; 
+                margin: 12px; 
+                border-radius: 20px; 
+                font-size: 18px; 
+                font-family: Georgia, 'Times New Roman', Times, serif; 
+                font-weight: bold; 
+                margin: 15px 79px;
+
+            }  
+             
+            .c1{  
+                display: inline-block;
+                /* border: 2px solid blue;   */
+                position: absolute; 
+                bottom: 100px; 
+                right: 137px;  
+                padding: 32px;
+                font-size: 18px; 
+                margin:-58px -114px; 
+                width: 300px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color:greenyellow;
+            
+            } 
+            .c1 ul h1{ 
+                font-size: 30px; 
+                width:322px; 
+                padding: 103px 12px; 
+                color:beige; 
+                /* border: 2px solid red; */
+                
+            } 
+            p{ 
+                text-align:center ; 
+                font-family: Georgia, 'Times New Roman', Times, serif; 
+                font-style: italic; 
+                font-size: 30px; 
+                /* border: 2px solid red;  */
+                    margin: -150px
+            } 
+            .cc{  
+                display: inline-block;
+                /* border: 2px solid red;   */
+                text-align: center; 
+                margin: 4%; 
+                position: absolute; 
+                bottom: -100px; 
+                left:436px ; 
+                font-family: Georgia, 'Times New Roman', Times, serif;  
+                font-style: italic;  
+                 font-size: 30px;  
+                color: aqua;
+            
+                
+            }
+            
+            
+    </style>
+</head>
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Saved Pictures/logo.jpg" alt="">
+            <div>Nature Goodness</div>
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Nature Therapies</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right ox for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Therapeutic session at it's best. Join Now!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div> 
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email id">
+            </div> 
+            <div class="form-group">
+                   <input type="integer" name="" placeholder="Enter your Phone no.">
+               </div>   
+            <button class="btn">Submit</button>
+        </form> 
+        
+    </div>  
+    <div class="c1"> 
+    <!-- <h1>Ammenities</h1>   -->
+    <ul class="c1">  
+        <h1 class="c1">Ammenities:</h1>
+        <li>Therapeutic Gardens</li>
+        <li>Outdoor Exercise Equipment</li>
+        <li>Walking and Hiking Trails</li>
+        <li>Meditation and Mindfulness Spaces</li>
+        <li>Water Features</li>
+    </ul>
+    </div>  
+    
+    <p>Enjoy the best nature therapy and give yourself better time from this chaotic lifestyle.  <div class="cc">"Feel the best feeling"</div></p> 
+    
+
+</body>
+
+</html>
